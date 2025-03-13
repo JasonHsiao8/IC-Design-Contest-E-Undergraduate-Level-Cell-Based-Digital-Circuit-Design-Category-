@@ -8,4 +8,4 @@
 | img4.pattern    | 30    | 30      | 35439  |
 | img5.pattern    | 23    | 23      | 35440  |
 | img6.pattern    | 30    | 30      | 35439  |
-| **Cover total** | 168   | 170     | -      |
+| **Cover total** | **168**   | **170**     | -      |
