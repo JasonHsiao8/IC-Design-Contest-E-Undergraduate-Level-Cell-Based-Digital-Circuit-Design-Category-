@@ -1,0 +1,87 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LASER
+Version: O-2018.06
+Date   : Wed Mar 19 04:21:59 2025
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: targ_idx_reg[3]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: temp_count_reg[1]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LASER              tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  targ_idx_reg[3]/CK (DFFHQX8)                            0.00       0.50 r
+  targ_idx_reg[3]/Q (DFFHQX8)                             0.24       0.74 f
+  U2597/Y (CLKINVX3)                                      0.17       0.91 r
+  U2297/Y (NOR2X4)                                        0.15       1.06 f
+  U2579/Y (AND2X1)                                        0.30       1.35 f
+  U2345/Y (BUFX8)                                         0.24       1.59 f
+  U3013/Y (AO22X1)                                        0.38       1.97 f
+  U2638/Y (AOI221X4)                                      0.41       2.38 r
+  U2489/Y (NAND4X2)                                       0.15       2.54 f
+  U2487/Y (CLKAND2X6)                                     0.18       2.72 f
+  U2376/Y (OR3X6)                                         0.25       2.97 f
+  U2690/Y (BUFX20)                                        0.16       3.12 f
+  U2637/Y (NAND2X2)                                       0.19       3.31 r
+  U2260/Y (AOI22X2)                                       0.13       3.44 f
+  U2325/Y (OR2X4)                                         0.24       3.68 f
+  U2502/Y (NAND3X6)                                       0.08       3.76 r
+  U2425/Y (NAND2X8)                                       0.07       3.83 f
+  U2427/Y (BUFX20)                                        0.12       3.95 f
+  U3076/Y (OAI33X4)                                       0.65       4.59 r
+  mult_62_2_C123_2/B[3] (LASER_DW02_mult_2)               0.00       4.59 r
+  mult_62_2_C123_2/U18/Y (INVX1)                          0.15       4.74 f
+  mult_62_2_C123_2/U5/Y (BUFX4)                           0.19       4.93 f
+  mult_62_2_C123_2/U32/Y (NOR2X1)                         0.24       5.17 r
+  mult_62_2_C123_2/U26/Y (BUFX6)                          0.17       5.33 r
+  mult_62_2_C123_2/U8/Y (XNOR2X2)                         0.16       5.49 f
+  mult_62_2_C123_2/U6/Y (NAND2X2)                         0.19       5.68 r
+  mult_62_2_C123_2/U19/Y (XOR2X4)                         0.17       5.85 f
+  mult_62_2_C123_2/PRODUCT[4] (LASER_DW02_mult_2)         0.00       5.85 f
+  add_62_C123_2/B[4] (LASER_DW01_add_3)                   0.00       5.85 f
+  add_62_C123_2/U1_4/CO (ADDFHX2)                         0.30       6.15 f
+  add_62_C123_2/U1_5/CO (ADDFHX2)                         0.23       6.38 f
+  add_62_C123_2/U1_6/S (ADDFHX2)                          0.28       6.66 f
+  add_62_C123_2/SUM[6] (LASER_DW01_add_3)                 0.00       6.66 f
+  U2389/Y (OR3X2)                                         0.30       6.96 f
+  U2451/Y (NOR2X2)                                        0.16       7.12 r
+  U2553/Y (AOI2BB1X4)                                     0.19       7.31 r
+  U2415/Y (OR3X4)                                         0.20       7.51 r
+  U2416/Y (NAND2X8)                                       0.12       7.62 f
+  U2731/Y (NOR2BX4)                                       0.29       7.92 r
+  U2248/Y (AND2X2)                                        0.22       8.13 r
+  U2443/Y (OR2X4)                                         0.14       8.27 r
+  temp_count_reg[1]/D (DFFHQX4)                           0.00       8.27 r
+  data arrival time                                                  8.27
+
+  clock CLK (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.50       8.50
+  clock uncertainty                                      -0.10       8.40
+  temp_count_reg[1]/CK (DFFHQX4)                          0.00       8.40 r
+  library setup time                                     -0.12       8.28
+  data required time                                                 8.28
+  --------------------------------------------------------------------------
+  data required time                                                 8.28
+  data arrival time                                                 -8.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
